@@ -13,6 +13,7 @@
           <img src="images/khetHubLogo.jpg" alt="KhetHub Logo" />
           <div class="brand-name">KhetHub</div>
         </div>
+<<<<<<< HEAD
 
         <nav class="nav-links">
           <a href="#top">Home</a>
@@ -31,6 +32,18 @@
           <button onclick="handleSearch()">🔍</button>
         </div>
 
+=======
+        <nav class="nav-links">
+          <a href="#top">Home</a>
+          <a href="#products">Product Categories</a>
+          <a href="#services">Service Categories</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+        <!-- <div class="search-box">
+      <input type="text" placeholder="Search..." />
+      <button>🔍</button>
+    </div> -->
+>>>>>>> 9ea73d1efb434be436729a686eb5e620054b1758
         <div class="menu">
           <span class="three-dots" onclick="toggleMenu()">⋮</span>
           <div id="dropdown-menu" class="dropdown-content">
@@ -58,13 +71,19 @@
     <h2 id="products">Product Categories</h2>
     <div class="product-list">
       <div
+<<<<<<< HEAD
         class="product searchable"
         data-name="apples"
         onclick="location.href='product-details.html?product=apple';"
+=======
+        class="product"
+        onclick="location.href='product1-details.html';"
+>>>>>>> 9ea73d1efb434be436729a686eb5e620054b1758
       >
         <img src="images/apples.jpg" alt="Apples" />
         <p>Apples</p>
       </div>
+<<<<<<< HEAD
       <div class="product searchable" data-name="bananas" onclick="redirectToFarmers('bananas')">
         <img src="images/bananas.jpg" alt="Bananas" />
         <p>Bananas</p>
@@ -78,6 +97,25 @@
         <p>Tomatoes</p>
       </div>
       <div class="product searchable" data-name="potatoes" onclick="redirectToFarmers('potatoes')">
+=======
+
+      <div class="product" onclick="location.href='product2-details.html';">
+        <img src="images/bananas.jpg" alt="Bananas" />
+        <p>Bananas</p>
+      </div>
+
+      <div class="product" onclick="location.href='product3-details.html';">
+        <img src="images/carrots.jpg" alt="Carrots" />
+        <p>Carrots</p>
+      </div>
+
+      <div class="product" onclick="location.href='product4-details.html';">
+        <img src="images/tomatoes.jpg" alt="Tomatoes" />
+        <p>Tomatoes</p>
+      </div>
+
+      <div class="product" onclick="location.href='product5-details.html';">
+>>>>>>> 9ea73d1efb434be436729a686eb5e620054b1758
         <img src="images/potatoes.jpg" alt="Potatoes" />
         <p>Potatoes</p>
       </div>
@@ -86,8 +124,17 @@
     <section id="services" class="service-categories">
       <h2>Service Categories</h2>
       <div class="service-list">
+<<<<<<< HEAD
         <div class="service searchable" data-name="crop requests">
           <img src="images/crop.jpg" alt="Crop Request" onclick="openCustomPage()" />
+=======
+        <div class="service">
+          <img
+            src="images/crop.jpg"
+            alt="Crop Request"
+            onclick="openCustomPage()"
+          />
+>>>>>>> 9ea73d1efb434be436729a686eb5e620054b1758
           <p>Crop Requests</p>
         </div>
         <div class="service searchable" data-name="insurance">
@@ -102,8 +149,18 @@
           <img src="images/on.jpg" alt="On demand Service" onclick="openOnDemandPage()" />
           <p>On demand service</p>
         </div>
+<<<<<<< HEAD
         <div class="service searchable" data-name="bidding system">
           <img src="images/bidding.jpg" alt="Bidding System" onclick="openBidPage()" />
+=======
+
+        <div class="service">
+          <img
+            src="images/bidding.jpg"
+            alt="Bidding System"
+            onclick="openBidPage()"
+          />
+>>>>>>> 9ea73d1efb434be436729a686eb5e620054b1758
           <p>Bidding System</p>
         </div>
         <div class="service searchable" data-name="contact details">
@@ -118,7 +175,11 @@
           <img src="images/transact.jpg" alt="Transaction" onclick="openTransactPage()" />
           <p>Transaction</p>
         </div>
+<<<<<<< HEAD
         <div class="service searchable" data-name="liverate">
+=======
+        <div class="service">
+>>>>>>> 9ea73d1efb434be436729a686eb5e620054b1758
           <img src="images/live.jpg" alt="LiveRate" onclick="openLivePage()" />
           <p>LiveRate</p>
         </div>
@@ -128,9 +189,33 @@
         </div>
       </div>
     </section>
+<<<<<<< HEAD
 
     <footer id="contact" style="background-color: #529071; color: #ffffff; font-family: Arial, sans-serif; padding: 0;">
       <div style="width: 100%; background-color: #20543a; text-align: center; padding: 15px 0; margin-bottom: 30px; font-size: xx-large; font-weight: 600;">
+=======
+    <footer
+      id="contact"
+      style="
+        background-color: #529071;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        padding: 0;
+      "
+    >
+      <!-- Contact Us Header Bar -->
+      <div
+        style="
+          width: 100%;
+          background-color: #20543a;
+          text-align: center;
+          padding: 15px 0;
+          margin-bottom: 30px;
+          font-size: xx-large;
+          font-weight: 600;
+        "
+      >
+>>>>>>> 9ea73d1efb434be436729a686eb5e620054b1758
         Contact Us
       </div>
 
@@ -179,10 +264,33 @@
           }
         });
       }
+<<<<<<< HEAD
 
       function toggleMenu() {
         const dropdown = document.getElementById("dropdown-menu");
         dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+=======
+      function openOnDemandPage() {
+        window.location.href = "ondemand.html";
+      }
+      function openCustomPage() {
+        window.location.href = "customize.html";
+      }
+      function openBidPage() {
+        window.location.href = "biddingSystem.html";
+      }
+      function openContactPage() {
+        window.location.href = "contact.html";
+      }
+      function openCollabPage() {
+        window.location.href = "collab.html";
+      }
+      function openLivePage() {
+        window.location.href = "dailyrate.html";
+      }
+      function openTransactPage() {
+        window.location.href = "transact.html";
+>>>>>>> 9ea73d1efb434be436729a686eb5e620054b1758
       }
 
       function openSchemesPage() { window.location.href = "schemes.html"; }
