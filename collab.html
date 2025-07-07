@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Collaboration Page</title>
+    <link rel="stylesheet" href="collab.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Farmer Collaboration Page</h1>
+        
+        <button class="collapsible">Booking and Scheduling</button>
+        <div class="content">
+            <label for="day">Day:</label>
+            <input type="text" id="day" name="day">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+        </div>
+        
+        <button class="collapsible">Resource Sharing Ratings and Reviews</button>
+        <div class="content">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback"></textarea>
+            <label for="rating">Rating:</label>
+            <div class="rating">
+                <span class="star" data-value="5">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="1">&#9733;</span>
+            </div>
+            <input type="hidden" id="rating" name="rating" value="0">
+        </div>
+        
+
+        <button class="collapsible">Group Collaboration</button>
+        <div class="content">
+            <label for="group-name">Group Name:</label>
+            <input type="text" id="group-name" name="group-name">
+            <label for="members">Add Members:</label>
+            <input type="text" id="members" name="members">
+        </div>
+
+        <button class="collapsible">Knowledge Exchange Forums</button>
+        <div class="content">
+            <h2>Q&A Section</h2>
+            <label for="question">Ask a Question:</label>
+            <textarea id="question" name="question"></textarea>
+        </div>
+
+        <button class="collapsible">Emergency Support Network</button>
+        <div class="content">
+            <p>Establish a network for sharing resources and support during emergencies, such as natural disasters or market disruptions, to help farmers quickly access aid and information.</p>
+        </div>
+
+        <button class="collapsible">Resource Sharing Map</button>
+        <div class="content">
+            <h2>Local Resources Map</h2>
+            <div id="map"></div>
+            <h3>Available Equipment</h3>
+            <div id="calendar"></div>
+        </div>
+    </div>
+
+    <script src="collab.js"></script>
+</body>
+</html>

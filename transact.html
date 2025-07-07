@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction - Transaction Page</title>
+    <link rel="stylesheet" href="transact.css">
+</head>
+<body>
+    <header>
+        <h1>Direct Market Access</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#market">Market</a></li>
+                <li><a href="#transactions">Transactions</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="transaction-form">
+            <h2>New Transaction</h2>
+            <form id="transaction">
+                <label for="product">Product:</label>
+                <input type="text" id="product" name="product" required>
+
+                <label for="quantity">Quantity (kg):</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <label for="price">Price per kg ($):</label>
+                <input type="number" id="price" name="price" required>
+
+                <label for="buyer">Buyer Name:</label>
+                <input type="text" id="buyer" name="buyer" required>
+
+                <label for="transaction-date">Transaction Date:</label>
+                <input type="date" id="transaction-date" name="transaction-date" required>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="bank-transfer">Bank Transfer</option>
+                    <option value="cash">Cash</option>
+                    <option value="mobile-payment">Mobile Payment</option>
+                </select>
+
+                <button type="submit">Submit Transaction</button>
+            </form>
+        </section>
+
+        <section id="transaction-history">
+            <h2>Transaction History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price per kg</th>
+                        <th>Total Price</th>
+                        <th>Buyer</th>
+                        <th>Date</th>
+                        <th>Payment Method</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Transaction records will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <script src="transact.js"></script>
+</body>
+</html>

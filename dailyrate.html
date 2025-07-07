@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Product Rates</title>
+    <link rel="stylesheet" href="dailyrates.css">
+</head>
+<body>
+    <header>
+        <h1>Agriculture Product Rates</h1>
+        <p>Your go-to platform for real-time market prices</p>
+    </header>
+    
+    <div class="container">
+        <div class="filter-section">
+            <select id="stateFilter">
+                <option value="all">All States</option>
+                <option value="madhyapradesh">Madhya Pradesh</option>
+                <option value="chhattisgarh">Chhattisgarh</option>
+            </select>
+            <select id="cityFilter">
+                <option value="all">All Cities</option>
+                <option value="jabalpur">Jabalpur</option>
+                <option value="raipur">Raipur</option>
+            </select>
+            <input type="text" id="searchBox" placeholder="Search products..." oninput="searchProducts()">
+        </div>
+
+        <div id="productList">
+            <div class="product-item" data-product="Wheat" data-state="madhyapradesh" data-city="jabalpur">
+                <h3>Wheat</h3>
+                <p>Today: ₹25/kg</p>
+                <p>Yesterday: ₹24/kg</p>
+                <p>2 Days Ago: ₹23/kg</p>
+                <canvas></canvas>
+            </div>
+            <div class="product-item" data-product="Rice" data-state="madhyapradesh" data-city="jabalpur">
+                <h3>Rice</h3>
+                <p>Today: ₹40/kg</p>
+                <p>Yesterday: ₹39/kg</p>
+                <p>2 Days Ago: ₹38/kg</p>
+                <canvas></canvas>
+            </div>
+            <div class="product-item" data-product="Sugarcane" data-state="chhattisgarh" data-city="raipur">
+                <h3>Sugarcane</h3>
+                <p>Today: ₹30/kg</p>
+                <p>Yesterday: ₹29/kg</p>
+                <p>2 Days Ago: ₹28/kg</p>
+                <canvas></canvas>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Agriculture Market Tracker. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dailyrates.js"></script>
+</body>
+</html>

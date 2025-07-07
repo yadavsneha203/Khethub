@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers' On-Demand Service</title>
+    <link rel="stylesheet" href="ondemand.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Farmers' On-Demand Service</h1>
+        <p>Connecting Farmers for Mutual Support and Services</p>
+
+        <div class="form-container">
+            <div class="service-form">
+                <h2>Request a Service</h2>
+                <form id="requestForm">
+                    <label for="requestServiceType">Service Type:</label>
+                    <select id="requestServiceType">
+                      <option value="Custom Crop Cultivation">Custom Crop Cultivation</option>
+                      <option value="Organic Farming Consultation">Organic Farming Consultation</option>
+                      <option value="Educational Workshopos and Tours">Educational Workshopos and Tours</optional>
+                   <option value="Home Garden Setup">Home Garden Setup</option>
+                        <!-- Add more options as needed -->
+                    </select>
+
+                    <label for="requestLocation">Your Location:</label>
+                    <input type="text" id="requestLocation" placeholder="Enter your location">
+
+                    <label for="requestDate">Preferred Date:</label>
+                    <input type="date" id="requestDate">
+
+                    <button type="submit">Submit Request</button>
+                </form>
+            </div>
+
+            <div class="service-form">
+                <h2>Offer a Service</h2>
+                <form id="offerForm">
+                    <label for="offerServiceType">Service Type:</label>
+                    <select id="offerServiceType">
+                        <option value="Custom Crop Cultivation">Custom Crop Cultivation</option>
+                      <option value="Organic Farming Consultation">Organic Farming Consultation</option>
+                      <option value="Educational Workshopos and Tours">Educational Workshopos and Tours</optional>
+                   <option value="Home Garden Setup">Home Garden Setup</option>
+                        <!-- Add more options as needed -->
+                    </select>
+
+                    <label for="offerLocation">Your Location:</label>
+                    <input type="text" id="offerLocation" placeholder="Enter your location">
+
+                    <label for="offerDate">Availability Date:</label>
+                    <input type="date" id="offerDate">
+
+                    <button type="submit">Submit Offer</button>
+                </form>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="ondemand.js"></script>
+</body>
+</html>

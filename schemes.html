@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Government Farmer Schemes</h1>
+    </header>
+    <section class="schemes">
+        <div class="scheme" onclick="openSchemeDetails('scheme1.html')">
+            <h2>Scheme 1: Farmer Loan Waiver</h2>
+            <p>This scheme provides loan waivers to farmers under certain conditions.</p>
+        </div>
+        <div class="scheme" onclick="openSchemeDetails('scheme2.html')">
+            <h2>Scheme 2: Crop Insurance</h2>
+            <p>Protects farmers against crop failure due to unforeseen circumstances.</p>
+        </div>
+        <div class="scheme" onclick="openSchemeDetails('scheme3.html')">
+            <h2>Scheme 3: Pradhan Mantri Kisan MaanDhan Yojana </h2>
+            <p>PMKMY is a central sector scheme  to provide security to the most vulnerable farmer families. </p>
+        </div>
+        <div class="scheme" onclick="openSchemeDetails('scheme4.html')">
+            <h2>Scheme 4: Pradhan Mantri Fasal Bima Yojana </h2>
+            <p>PMFBY was launched  in order to provide a simple and affordable crop insurance product </p>
+        </div>
+        <div class="scheme" onclick="openSchemeDetails('scheme5.html')">
+            <h2>Scheme 5: Agriculture Infrastructure Fund (AIF) </h2>
+            <p>AIF was introduced with a vision to transform the agriculture infrastructure landscape of the country. </p>
+        </div>
+        
+        <!-- Add more schemes here if needed -->
+    </section>
+    <script>
+        function openSchemeDetails(schemePage) {
+            window.location.href = schemePage;
+        }
+    </script>
+</body>
+</html>
+
+    

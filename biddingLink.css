@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    min-height: 700px; /* Enlarged the page size */
+    padding-bottom: 50px;
+}
+
+.details-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(239, 244, 238, 0.2);
+    width: 500px; /* Enlarged width */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+h2, h3{
+    background-color: #18682b; /* Green background for the heading box */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    color: #fff; /* White text color for the heading */
+    margin: 0; /* Remove default margin */
+}
+
+
+.details-container p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.bid-section, .chat-section {
+    margin-top: 20px;
+}
+
+
+#bidForm input, #bidForm button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#bidsList {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+#bidsList li {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bidsList .btn-accept {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#bidsList .btn-reject {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#bidsList .btn-accept:hover {
+    background-color: #45a049;
+}
+
+#bidsList .btn-reject:hover {
+    background-color: #e53935;
+}
+
+#chatBox {
+    height: 150px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+#chatInput {
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#sendBtn {
+    padding: 10px;
+    background-color: #276129;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#sendBtn:hover {
+    background-color: #1c521e;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    min-height: 700px; /* Enlarged the page size */
+    padding-bottom: 50px;
+}
+
+.details-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(239, 244, 238, 0.2);
+    width: 500px; /* Enlarged width */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+h2, h3{
+    background-color: #18682b; /* Green background for the heading box */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    color: #fff; /* White text color for the heading */
+    margin: 0; /* Remove default margin */
+}
+
+
+.details-container p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.bid-section, .chat-section {
+    margin-top: 20px;
+}
+
+
+#bidForm input, #bidForm button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#bidsList {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+#bidsList li {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bidsList .btn-accept {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#bidsList .btn-reject {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#bidsList .btn-accept:hover {
+    background-color: #45a049;
+}
+
+#bidsList .btn-reject:hover {
+    background-color: #e53935;
+}
+
+#chatBox {
+    height: 150px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+#chatInput {
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#sendBtn {
+    padding: 10px;
+    background-color: #276129;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#sendBtn:hover {
+    background-color: #1c521e;
+}

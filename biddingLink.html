@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Details and Bidding</title>
+    <link rel="stylesheet" href="biddingLink.css">
+</head>
+<body>
+    <div class="details-container">
+        <h2 id="farmerName"></h2>
+        <p id="product"></p>
+        <p id="initialPrice"></p>
+        
+        <!-- Bidding Section -->
+        <div class="bid-section">
+            <h3>Place Your Bid</h3>
+            <form id="bidForm">
+                <input type="number" id="bidAmount" placeholder="Enter your bid amount " required>
+                <button type="submit">Submit Bid</button>
+            </form>
+            <h3>Submitted Bids</h3>
+            <ul id="bidsList"></ul> <!-- List to display submitted bids with actions -->
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-section">
+            <h3>Chat with Farmer</h3>
+            <div id="chatBox"></div>
+            <input type="text" id="chatInput" placeholder="Type your message">
+            <button id="sendBtn">Send</button>
+        </div>
+        
+    </div>
+    <script src="biddingLink.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Selection Tool</title>
+    <link rel="stylesheet" href="cropSelectionTool.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Selection Tool</h1>
+        <form id="cropSelectionForm">
+            <label for="soilType">Soil Type:</label>
+            <input type="text" id="soilType" name="soilType" required>
+
+            <label for="climate">Climate Conditions:</label>
+            <input type="text" id="climate" name="climate" required>
+
+            <label for="waterAvailability">Water Availability (Liters per day):</label>
+            <input type="number" id="waterAvailability" name="waterAvailability" required>
+
+            <label for="marketPrice">Current Market Price (₹ per kg):</label>
+            <input type="number" id="marketPrice" name="marketPrice" required>
+
+            <label for="resources">Available Resources (e.g., labor, fertilizer):</label>
+            <input type="text" id="resources" name="resources" required>
+
+            <button type="submit">Get Crop Suggestions</button>
+        </form>
+
+        <div id="suggestions">
+            <h2>Crop Suggestions</h2>
+            <p id="cropCompatibility"></p>
+
+            <h2>Water Requirement</h2>
+            <p id="waterRequirement"></p>
+
+            <h2>Economic Viability</h2>
+            <p id="economicViability"></p>
+        </div>
+    </div>
+
+    <script src="cropSelectionTool.js"></script>
+</body>
+</html>

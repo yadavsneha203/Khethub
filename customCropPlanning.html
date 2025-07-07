@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Crop Planning</title>
+    <link rel="stylesheet" href="customCropPlanning.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Crop Planning Tool</h1>
+        <form id="cropForm">
+            <label for="soilType">Soil Type:</label>
+            <input type="text" id="soilType" name="soilType" required>
+            
+            <label for="climate">Climate Conditions:</label>
+            <input type="text" id="climate" name="climate" required>
+            
+            <label for="resources">Available Resources:</label>
+            <input type="text" id="resources" name="resources" required>
+
+            <label for="season">Current Season:</label>
+            <input type="text" id="season" name="season" required>
+            
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        <div id="recommendations">
+            <h2>Suggested Crops</h2>
+            <p id="cropSuggestions"></p>
+
+            <h2>Seasonal Recommendations</h2>
+            <p id="seasonalSuggestions"></p>
+
+            <h2>Estimated Yield</h2>
+            <p id="yieldPrediction"></p>
+        </div>
+    </div>
+
+    <script src="customCropPlanning.js"></script>
+</body>
+</html>

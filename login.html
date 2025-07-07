@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="login-form" id="login-form">
+            <h2>Login Page</h2>
+            <form id="login" onsubmit="return validateLogin()">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" onclick="location.href='index.html?';">Log in</button>
+                
+                <button type="button" onclick="showForgotPassword()">Forgot Password?</button>
+                <p id="error-message"></p>
+            </form>
+        </div>
+
+        <!-- Forgot Password Form -->
+        <div class="forgot-password-form" id="forgot-password-form" style="display: none;">
+            <h2>Forgot Password</h2>
+            <form id="forgot-password" onsubmit="return resetPassword()">
+                <div class="input-group">
+                    <label for="recovery-email">Email or Phone Number:</label>
+                    <input type="text" id="recovery-email" name="recovery-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="new-password">New Password:</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-new-password">Confirm New Password:</label>
+                    <input type="password" id="confirm-new-password" name="confirm-new-password" required>
+                </div>
+                <button type="submit" onclick="location.href='index.html?';">Reset Password</button>
+                <button type="button" onclick="hideForgotPassword()">Back to Login</button>
+                <p id="forgot-password-message"></p>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>खेतHub - Welcome</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to खेतHub</h1>
+            <p>Farm to home, no need to roam!</p>
+            <p>फार्म से घर तक की डगर, बिना किसी फालतू सफर👨🏻‍🌾!!</p>
+        </header>
+        <img src="images/khetHubLogo.jpg" height="250" alt="खेतHub Logo"/>
+
+        <div class="buttons">
+            <h2></h2>
+            <button id="loginBtn" >Login</button>
+            <button id="signupBtn"> Sign Up</button>
+        </div>
+
+        <!-- Dropdown menu for Login -->
+        <div id="loginDropdown" class="dropdown hidden">
+            <h2>Select Login Category</h2>
+            <select id="loginCategorySelect">
+                <option value="">--Choose Category--</option>
+                <option value="farmer" onclick="loin.html">Farmer</option>
+                <option value="customer" onclick="login.html">Customer</option>
+            </select>
+            <br>
+            <br>
+            <button id="loginSubmitBtn" >Submit</button>
+        </div>
+
+        <!-- Dropdown menu for Sign Up -->
+        <div id="signupDropdown" class="dropdown hidden">
+            <h2>Select Sign Up Category</h2>
+            <select id="signupCategorySelect">
+                <option value="">--Choose Category--</option>
+                <option value="farmer" onclick="farmer-registration.html">Farmer</option>
+                <option value="customer">Customer</option>
+            </select>
+            <br>
+            <br>
+            <button id="signupSubmitBtn">Submit</button>
+        </div>
+    </div>
+
+    <script src="welcome.js"></script>
+</body>
+</html>

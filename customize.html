@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Crop Requests</title>
+    <link rel="stylesheet" href="customizedCropRequest.css">
+    <!-- <link rel="stylesheet" href="link.css"> -->
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <!-- Consumer/Retailer Request Section -->
+            <section id="custom-request">
+                <h2>Consumer/Retailer Request (Customized Crop)</h2>
+                <form id="request-form">
+                    <label for="crop-type">Crop Type:</label>
+                    <input id="crop-type" name="crop-type" required>
+                      
+                    </select>
+    
+                    <label for="quantity">Quantity (kg):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+    
+                    <label for="quality">Quality:</label>
+                    <input type="text" id="quality" name="quality" required>
+    
+                    <label for="timeframe">Timeframe:</label>
+                    <input type="date" id="timeframe" name="timeframe" required>
+    
+                    <button type="submit">Submit Request</button>
+                </form>
+                <div id="form-message"></div>
+            </section>
+    
+            <!-- Farmer Response Section -->
+            <section id="farmer-response">
+                <h2>Farmer Response</h2>
+                <input type="text" id="search-bar" placeholder="Search Requests">
+                <div id="requests-list">
+                    <!-- Request cards will be dynamically added here -->
+                </div>
+            </section>
+        
+
+        <!-- Farmer Response Section -->
+        <section id="farmer-response">
+            <h2>Farmer Response</h2>
+            <div id="requests-list">
+                <!-- Example Request Card -->
+                <div class="request-card">
+                    <h3>Request #1</h3>
+                    <p>Crop Type: Rice</p>
+                    <p>Quantity: 100 kg</p>
+                    <p>Quality: Premium</p>
+                    <p>Timeframe: 2 weeks</p>
+                    <button class="accept-btn">Accept</button>
+                    <button class="decline-btn">Decline</button>
+                    <button class="negotiate-btn">Negotiate</button>
+                </div>
+                <!-- More request cards will be added dynamically -->
+            </div>
+        </section>
+    </div>
+       <!-- Modal for confirmation message -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="confirmation-message"></p>
+        </div>
+    </div>
+    <!-- Other Options  -->
+     <div id="options">
+        <h2>Crop Insurance</h2>
+        <h2><a href="customCropPlanning.html">Custom Crop Planning</a></h2>
+        <h2><a href="cropSelectionTool.html">Crop Selection Tool</a></h2>
+        <h2><a href="cropRotation.html">Crop Rotation Plans</a></h2>
+     </div>
+
+    <script src="customizedCropRequest.js"></script>
+</body>
+</html>

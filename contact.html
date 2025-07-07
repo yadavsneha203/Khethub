@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page - Agriculture</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="buttons">
+            <button id="farmersBtn" onclick="showList('farmers')">
+                <img src="farmerimage.jpg" alt="Farmers" />
+                Farmers
+            </button>
+            <button id="customersBtn" onclick="showList('customers')">
+                <img src="Customer.jpeg" alt="Customers" />
+                Customers
+            </button>
+            <button id="agentsBtn" onclick="showList('agents')">
+                <img src="images/insurance.jpg" alt="Agents" />
+                Insurance Agents
+            </button>
+        </div>
+        <div id="contactList" class="contact-list"></div>
+        <div id="contactDetails" class="contact-details"></div>
+
+        <div class="contact-tips">
+            <h3>Contact Tips:</h3>
+            <ul>
+                <li>Always verify the contact information before reaching out.</li>
+                <li>Use email for official communications and record-keeping.</li>
+                <li>Keep your conversations professional and focused on the topic at hand.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>
