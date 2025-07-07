@@ -74,10 +74,7 @@
     <section class="service-categories">
       <h2>Service Categories</h2>
       <div class="service-list">
-        <div class="service">
-          <img src="images/video.jpg" alt="Videos" />
-          <p>Videos</p>
-        </div>
+        
         <div class="service">
           <img
             src="images/crop.jpg"
@@ -94,18 +91,9 @@
           <img src="images/scheme.jpg" alt="Schemes" />
           <p>Schemes</p>
         </div>
-        <div class="service">
-          <img src="images/training.jpg" alt="Training " />
-          <p>Training</p>
-        </div>
-        <div class="service">
-          <img src="images/competitons.jpg" alt="Competitions" />
-          <p>Competitions</p>
-        </div>
-        <div class="service">
-          <img src="images/transport.jpg" alt="Farm drivers" />
-          <p>Farm Drrivers</p>
-        </div>
+        
+        
+       
         <div class="service">
           <img
             src="images/on.jpg"
@@ -114,10 +102,7 @@
           />
           <p>On demand service</p>
         </div>
-        <div class="service">
-          <img src="images/expert.jpg" alt="Experts help" />
-          <p>Experts help</p>
-        </div>
+        
         <div class="service">
           <img
             src="images/bidding.jpg"
@@ -151,8 +136,10 @@
           <p>Transaction</p>
         </div>
         <div class="service">
-          <img src="images/warehouse.jpg" alt="Warehouse" />
-          <p>Warehouse</p>
+          <img src="images/live.jpg" alt="LiveRate" 
+          onclick="openLivePage()"
+          />
+          <p>LiveRate</p>
         </div>
         <div class="service">
           <img src="images/more.jpg" alt="More" />
@@ -296,6 +283,9 @@
       }
       function openCollabPage() {
         window.location.href = "collab.html";
+      }
+       function openLivePage() {
+        window.location.href = "dailyrate.html";
       }
       function openTransactPage() {
         window.location.href = "transact.html";
