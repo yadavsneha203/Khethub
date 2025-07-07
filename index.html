@@ -7,35 +7,35 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-   <header>
-  <div class="nav-container">
-    <div class="logo">
-      <img src="images/khetHubLogo.jpg" alt="KhetHub Logo" />
-      <div class="brand-name">KhetHub</div>
-    </div>
-    <nav class="nav-links">
-      <a href="#top">Home</a>
-      <a href="#products">Product Categories</a>
-      <a href="#services">Service Categories</a>
-      <a href="#contact">Contact Us</a>
-    </nav>
-    <!-- <div class="search-box">
+    <header>
+      <div class="nav-container">
+        <div class="logo">
+          <img src="images/khetHubLogo.jpg" alt="KhetHub Logo" />
+          <div class="brand-name">KhetHub</div>
+        </div>
+        <nav class="nav-links">
+          <a href="#top">Home</a>
+          <a href="#products">Product Categories</a>
+          <a href="#services">Service Categories</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+        <!-- <div class="search-box">
       <input type="text" placeholder="Search..." />
       <button>🔍</button>
     </div> -->
-    <div class="menu">
-      <span class="three-dots" onclick="toggleMenu()">⋮</span>
-      <div id="dropdown-menu" class="dropdown-content">
-        <a href="#">Change Password</a>
-        <a href="#">Language</a>
-        <a href="#">Settings</a>
-        <a href="#">Your Profile</a>
-        <a href="#">Liked Products</a>
-        <a href="#">Most Viewed Products</a>
+        <div class="menu">
+          <span class="three-dots" onclick="toggleMenu()">⋮</span>
+          <div id="dropdown-menu" class="dropdown-content">
+            <a href="#">Change Password</a>
+            <a href="#">Language</a>
+            <a href="#">Settings</a>
+            <a href="#">Your Profile</a>
+            <a href="#">Liked Products</a>
+            <a href="#">Most Viewed Products</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</header>
+    </header>
 
     <div class="slider">
       <div class="slides">
@@ -51,34 +51,36 @@
     <div class="product-list">
       <div
         class="product"
-        onclick="location.href='product-details.html?product=apple';"
+        onclick="location.href='product1-details.html';"
       >
         <img src="images/apples.jpg" alt="Apples" />
         <p>Apples</p>
       </div>
-      <div class="product" onclick="redirectToFarmers('bananas')">
+
+      <div class="product" onclick="location.href='product2-details.html';">
         <img src="images/bananas.jpg" alt="Bananas" />
         <p>Bananas</p>
       </div>
-      <div class="product" onclick="redirectToFarmers('carrots')">
+
+      <div class="product" onclick="location.href='product3-details.html';">
         <img src="images/carrots.jpg" alt="Carrots" />
         <p>Carrots</p>
       </div>
-      <!-- Add more products (over 25) here -->
-      <div class="product" onclick="redirectToFarmers('tomatoes')">
+
+      <div class="product" onclick="location.href='product4-details.html';">
         <img src="images/tomatoes.jpg" alt="Tomatoes" />
         <p>Tomatoes</p>
       </div>
-      <div class="product" onclick="redirectToFarmers('potatoes')">
+
+      <div class="product" onclick="location.href='product5-details.html';">
         <img src="images/potatoes.jpg" alt="Potatoes" />
         <p>Potatoes</p>
       </div>
-      <!-- Continue with more products -->
     </div>
+
     <section id="services" class="service-categories">
       <h2>Service Categories</h2>
       <div class="service-list">
-        
         <div class="service">
           <img
             src="images/crop.jpg"
@@ -103,7 +105,7 @@
           />
           <p>On demand service</p>
         </div>
-        
+
         <div class="service">
           <img
             src="images/bidding.jpg"
@@ -137,9 +139,7 @@
           <p>Transaction</p>
         </div>
         <div class="service">
-          <img src="images/live.jpg" alt="LiveRate" 
-          onclick="openLivePage()"
-          />
+          <img src="images/live.jpg" alt="LiveRate" onclick="openLivePage()" />
           <p>LiveRate</p>
         </div>
         <div class="service">
@@ -149,8 +149,8 @@
         <!-- Add more services as needed -->
       </div>
     </section>
-    <footer 
-     id="contact"
+    <footer
+      id="contact"
       style="
         background-color: #529071;
         color: #ffffff;
@@ -286,7 +286,7 @@
       function openCollabPage() {
         window.location.href = "collab.html";
       }
-       function openLivePage() {
+      function openLivePage() {
         window.location.href = "dailyrate.html";
       }
       function openTransactPage() {
