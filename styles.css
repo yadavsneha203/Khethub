@@ -5,7 +5,9 @@ body {
     background-color: #b5f5c0;
     color: #036104;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 header {
     background-color: #3e805c;
     color: white;
