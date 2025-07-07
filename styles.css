@@ -21,7 +21,6 @@ header {
     padding: 10px;
 }
 
-
 h1 {
     margin: 0;
 }
@@ -124,15 +123,15 @@ h2 {
     border-radius: 50%;
 }
 
-footer {
+/* footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: #fff;
-    position: fixed;
+    /* position: fixed; 
     width: 100%;
-    bottom: 0;
-}
+    bottom: 0; 
+}*/
 .logo-container {
     text-align: center;
     flex-grow: 1; /* Allows the logo to take up the remaining space between menu and search */
@@ -205,15 +204,13 @@ h2 {
     border-radius: 50%;
 }
 
-footer {
+/* footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+    padding: 40px 20px 20px;
+    background-color: #2a9d2a;
+    color: #004d00;
+} */
+
 /* Existing styles... */
 
 .product-list {
