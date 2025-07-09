@@ -7,32 +7,36 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="header-top">
-        <!-- <h1>KhetHub  </h1> -->
-
-        <!-- <div class="header-right"> -->
-
-        <div class="menu">
-          <span class="three-dots" onclick="toggleMenu()">⋮</span>
-          <div id="dropdown-menu" class="dropdown-content">
-            <a href="#">Change Password</a>
-            <a href="#">Language</a>
-            <a href="#">Settings</a>
-            <a href="#">Your Profile</a>
-            <a href="#">Liked Products</a>
-            <a href="#">Most Viewed Products</a>
-          </div>
-        </div>
-        <div class="logo-container">
-          <img src="images/khetHubLogo.jpg" alt="KhetHub Logo" />
-        </div>
-        <div class="search-box">
-          <input type="text" placeholder="Search..." />
-          <button>🔍</button>
-        </div>
+   <header>
+  <div class="nav-container">
+    <div class="logo">
+      <img src="images/khetHubLogo.jpg" alt="KhetHub Logo" />
+      <div class="brand-name">KhetHub</div>
+    </div>
+    <nav class="nav-links">
+      <a href="#top">Home</a>
+      <a href="#products">Product Categories</a>
+      <a href="#services">Service Categories</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+    <!-- <div class="search-box">
+      <input type="text" placeholder="Search..." />
+      <button>🔍</button>
+    </div> -->
+    <div class="menu">
+      <span class="three-dots" onclick="toggleMenu()">⋮</span>
+      <div id="dropdown-menu" class="dropdown-content">
+        <a href="#">Change Password</a>
+        <a href="#">Language</a>
+        <a href="#">Settings</a>
+        <a href="#">Your Profile</a>
+        <a href="#">Liked Products</a>
+        <a href="#">Most Viewed Products</a>
       </div>
-    </header>
+    </div>
+  </div>
+</header>
+
     <div class="slider">
       <div class="slides">
         <img src="images/slide1.jpg" alt="Slide 1" />
@@ -43,7 +47,7 @@
       </div>
     </div>
 
-    <h2>Product Categories</h2>
+    <h2 id="products">Product Categories</h2>
     <div class="product-list">
       <div
         class="product"
@@ -71,7 +75,7 @@
       </div>
       <!-- Continue with more products -->
     </div>
-    <section class="service-categories">
+    <section id="services" class="service-categories">
       <h2>Service Categories</h2>
       <div class="service-list">
         
@@ -91,9 +95,6 @@
           <img src="images/scheme.jpg" alt="Schemes" />
           <p>Schemes</p>
         </div>
-        
-        
-       
         <div class="service">
           <img
             src="images/on.jpg"
@@ -148,7 +149,8 @@
         <!-- Add more services as needed -->
       </div>
     </section>
-    <footer
+    <footer 
+     id="contact"
       style="
         background-color: #529071;
         color: #ffffff;
