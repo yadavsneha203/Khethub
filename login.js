@@ -20,7 +20,7 @@ function validateLogin() {
   if (username === storedUsername && password === storedPassword) {
     document.getElementById('error-message').textContent = '';
     alert('Login successful!');
-    window.location.href = 'index.html'; // or dashboard page
+    window.location.href = 'dashboard.html'; // or dashboard page
     return false;
   } else {
     document.getElementById('error-message').textContent = 'Username or password is incorrect.';

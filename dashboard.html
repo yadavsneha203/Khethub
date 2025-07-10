@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Harvest Products</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo">
+          <img src="images/khetHubLogo.jpg" alt="KhetHub Logo" />
+          <div class="brand-name">KhetHub</div>
+        </div>
+
+        <nav class="nav-links">
+          <a href="#top">Home</a>
+          <a href="#products">Product Categories</a>
+          <a href="#services">Service Categories</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+
+        <div class="search-box">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search..."
+            oninput="handleSearch()"
+          />
+          <button onclick="handleSearch()">🔍</button>
+        </div>
+
+        <div class="menu">
+          <span class="three-dots" onclick="toggleMenu()">⋮</span>
+          <div id="dropdown-menu" class="dropdown-content">
+            <a href="#">Change Password</a>
+            <a href="#">Language</a>
+            <a href="#">Settings</a>
+            <a href="#">Your Profile</a>
+            <a href="#">Liked Products</a>
+            <a href="#">Most Viewed Products</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="slider">
+      <div class="slides">
+        <img src="images/slide1.jpg" alt="Slide 1" />
+        <img src="images/slide2.jpg" alt="Slide 2" />
+        <img src="images/slide3.jpg" alt="Slide 3" />
+        <img src="images/slide4.jpg" alt="Slide 4" />
+        <img src="images/slide5.jpg" alt="Slide 5" />
+      </div>
+    </div>
+
+    <h2 id="products">Product Categories</h2>
+    <div class="product-list">
+      <div class="product" onclick="location.href='product1-details.html';">
+        <img src="images/apples.jpg" alt="Apples" />
+        <p>Apples</p>
+      </div>
+
+      <div class="product" onclick="location.href='product2-details.html';">
+        <img src="images/bananas.jpg" alt="Bananas" />
+        <p>Bananas</p>
+      </div>
+
+      <div class="product" onclick="location.href='product3-details.html';">
+        <img src="images/carrots.jpg" alt="Carrots" />
+        <p>Carrots</p>
+      </div>
+
+      <div class="product" onclick="location.href='product4-details.html';">
+        <img src="images/tomatoes.jpg" alt="Tomatoes" />
+        <p>Tomatoes</p>
+      </div>
+
+      <div class="product" onclick="location.href='product5-details.html';">
+        <img src="images/potatoes.jpg" alt="Potatoes" />
+        <p>Potatoes</p>
+      </div>
+    </div>
+
+    <section id="services" class="service-categories">
+      <h2>Service Categories</h2>
+      <div class="service-list">
+        <div class="service searchable" data-name="crop requests">
+          <img
+            src="images/crop.jpg"
+            alt="Crop Request"
+            onclick="openCustomPage()"
+          />
+          <p>Crop Requests</p>
+        </div>
+        <div class="service searchable" data-name="insurance">
+          <img
+            src="images/insurance.jpg"
+            alt="Insurance"
+            onclick="openInsurancePage()"
+          />
+          <p>Insurance</p>
+        </div>
+        <div
+          class="service searchable"
+          data-name="schemes"
+          onclick="openSchemesPage()"
+        >
+          <img src="images/scheme.jpg" alt="Schemes" />
+          <p>Schemes</p>
+        </div>
+        <div class="service searchable" data-name="on demand service">
+          <img
+            src="images/on.jpg"
+            alt="On demand Service"
+            onclick="openOnDemandPage()"
+          />
+          <p>On demand service</p>
+        </div>
+        <div class="service searchable" data-name="bidding">
+          <img
+            src="images/bidding.jpg"
+            alt="Bidding System"
+            onclick="openBidPage()"
+          />
+          <p>Bidding System</p>
+        </div>
+        <div class="service searchable" data-name="contact details">
+          <img
+            src="images/contact.jpg"
+            alt="Contact Details"
+            onclick="openContactPage()"
+          />
+          <p>Contact Details</p>
+        </div>
+        <div class="service searchable" data-name="collaboration">
+          <img
+            src="images/collab.jpg"
+            alt="Collaboration"
+            onclick="openCollabPage()"
+          />
+          <p>Collaboration</p>
+        </div>
+        <div class="service searchable" data-name="transaction">
+          <img
+            src="images/transact.jpg"
+            alt="Transaction"
+            onclick="openTransactPage()"
+          />
+          <p>Transaction</p>
+        </div>
+        <div class="service searchable" data-name="liverate">
+          <img src="images/live.jpg" alt="LiveRate" onclick="openLivePage()" />
+          <p>LiveRate</p>
+        </div>
+        <div class="service searchable" data-name="more">
+          <img src="images/more.jpg" alt="More" />
+          <p>More</p>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      id="contact"
+      style="
+        background-color: #529071;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        padding: 0;
+      "
+    >
+      <div
+        style="
+          width: 100%;
+          background-color: #20543a;
+          text-align: center;
+          padding: 15px 0;
+          margin-bottom: 30px;
+          font-size: xx-large;
+          font-weight: 600;
+        "
+      >
+        Contact Us
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          max-width: 1200px;
+          margin: auto;
+          padding: 0 10px 30px;
+          text-align: left;
+        "
+      >
+        <div style="min-width: 150px; margin: 10px">
+          <h4 style="margin-bottom: 10px">Get to Know Us</h4>
+          <p>
+            <a href="#" style="color: #ffffff; text-decoration: none"
+              >About Khethub</a
+            >
+          </p>
+          <p>
+            <a href="#" style="color: #ffffff; text-decoration: none"
+              >Careers</a
+            >
+          </p>
+          <p>
+            <a href="#" style="color: #ffffff; text-decoration: none">Press</a>
+          </p>
+        </div>
+        <div style="min-width: 150px; margin: 10px">
+          <h4 style="margin-bottom: 10px">Connect with Us</h4>
+          <p>
+            <a href="#" style="color: #ffffff; text-decoration: none"
+              >Facebook</a
+            >
+          </p>
+          <p>
+            <a href="#" style="color: #ffffff; text-decoration: none"
+              >Twitter</a
+            >
+          </p>
+          <p>
+            <a href="#" style="color: #ffffff; text-decoration: none"
+              >Instagram</a
+            >
+          </p>
+        </div>
+        <div style="min-width: 150px; margin: 10px">
+          <h4 style="margin-bottom: 10px">Partner with Us</h4>
+          <p>
+            <a href="#" style="color: #ffffff; text-decoration: none"
+              >Join as Farmer</a
+            >
+          </p>
+          <p>
+            <a href="#" style="color: #ffffff; text-decoration: none"
+              >Offer a Service</a
+            >
+          </p>
+          <p>
+            <a href="#" style="color: #ffffff; text-decoration: none"
+              >Advertise</a
+            >
+          </p>
+        </div>
+        <div style="min-width: 150px; margin: 10px">
+          <h4 style="margin-bottom: 10px">Let Us Help You</h4>
+          <p>
+            <a href="#" style="color: #ffffff; text-decoration: none"
+              >Support</a
+            >
+          </p>
+          <p>
+            <a href="#" style="color: #ffffff; text-decoration: none">FAQs</a>
+          </p>
+        </div>
+      </div>
+      <div
+        style="
+          text-align: center;
+          padding: 20px 10px;
+          font-size: 14px;
+          border-top: 1px solid #99cc99;
+        "
+      >
+        &copy; 2024 Khethub | All rights reserved
+      </div>
+    </footer>
+
+
+    <script>
+      let slideIndex = 0;
+  const slides = document.querySelector(".slides");
+  const totalSlides = slides.children.length;
+
+  function showNextSlide() {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+
+  setInterval(showNextSlide, 3000); 
+      function handleSearch() {
+        const input = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+        const items = document.querySelectorAll(".searchable");
+        items.forEach((item) => {
+          const name = item.getAttribute("data-name").toLowerCase();
+          item.style.display = name.includes(input) ? "block" : "none";
+        });
+      }
+
+      function toggleMenu() {
+        const dropdown = document.getElementById("dropdown-menu");
+        dropdown.style.display =
+          dropdown.style.display === "block" ? "none" : "block";
+      }
+
+      function openOnDemandPage() {
+        window.location.href = "ondemand.html";
+      }
+      function openCustomPage() {
+        window.location.href = "customize.html";
+      }
+      function openBidPage() {
+        window.location.href = "biddingSystem.html";
+      }
+      function openContactPage() {
+        window.location.href = "contact.html";
+      }
+      function openCollabPage() {
+        window.location.href = "collab.html";
+      }
+      function openLivePage() {
+        window.location.href = "dailyrate.html";
+      }
+      function openTransactPage() {
+        window.location.href = "transact.html";
+      }
+      function openSchemesPage() {
+        window.location.href = "schemes.html";
+      }
+      function openInsurancePage() {
+        window.location.href = "insurance.html";
+      }
+
+      document.addEventListener("click", function (event) {
+        const menu = document.getElementById("dropdown-menu");
+        const toggle = document.querySelector(".three-dots");
+
+        if (!toggle.contains(event.target) && !menu.contains(event.target)) {
+          menu.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
